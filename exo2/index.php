@@ -25,7 +25,16 @@ Il faudra afficher le contenu de ces variables sur la deuxième page.</p>
         </div>
     </header>
     <main class="">
+    <div class="row">
+            <div class="results position-absolute top-50 start-50 translate-middle ">
+                <p>
+                    <?php
 
+                    ?>
+                </p>
+            </div>
+        </div>
+    </main>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
