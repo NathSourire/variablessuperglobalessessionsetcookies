@@ -1,5 +1,5 @@
 <?php
-$name = 'Nathalie';
+
 ?>
 
 <!DOCTYPE html>
@@ -19,7 +19,10 @@ $name = 'Nathalie';
         <div class="row">
             <img class="imgLogo col-3" src="./public/assets/img/PHP-logo.png" alt="Logo PHP">
             <h1 class="col-7">Exercice 1</h1>
-            <p>Créer une variable name et l'initialiser avec la valeur de votre choix. Afficher son contenu.</p>
+            <p>Faire une page HTML permettant de donner à l'utilisateur :
+                son User Agent
+                son adresse ip
+                le nom du serveur</p>
         </div>
     </header>
     <main class="">

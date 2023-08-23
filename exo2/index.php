@@ -1,5 +1,5 @@
 <?php
-$name = 'Nathalie';
+
 ?>
 
 <!DOCTYPE html>
@@ -11,15 +11,17 @@ $name = 'Nathalie';
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="./public/assets/css/style.css">
-    <title>PHP exo 1</title>
+    <title>PHP exo 2</title>
 </head>
 
 <body>
     <header class="container-fluid">
         <div class="row">
             <img class="imgLogo col-3" src="./public/assets/img/PHP-logo.png" alt="Logo PHP">
-            <h1 class="col-7">Exercice 1</h1>
-            <p>Créer une variable name et l'initialiser avec la valeur de votre choix. Afficher son contenu.</p>
+            <h1 class="col-7">Exercice 2</h1>
+            <p>Sur la page index, faire un lien vers une autre page. Passer d'une page à l'autre le contenu des variables lastname, firstname et age grâce aux sessions.
+Ces variables auront été définies directement dans le code. 
+Il faudra afficher le contenu de ces variables sur la deuxième page.</p>
         </div>
     </header>
     <main class="">
