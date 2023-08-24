@@ -1,5 +1,8 @@
 <?php
-
+if ($_SERVER["REQUEST_METHOD"] == 'POST') {
+    setcookie('firstname', $_POST['firstname'], time() + 365 * 24 * 3600);
+    setcookie('password', $_POST['password'], time() + 365 * 24 * 3600);
+}
 ?>
 
 <!DOCTYPE html>
@@ -23,16 +26,27 @@
         </div>
     </header>
     <main class="">
-    <div class="row">
+        <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-                <p>
-                    <?php
-
-                    ?>
-                </p>
+            <form class="row justify-content-center" method="post" action="index.php">
+                <div class="">
+                    <div class="row">
+                        <label class="col-12" for="nom">Nom</label>
+                        <input class="col-6 form-control" type="text" name="firstname">
+                        <label class="col-12" for="mot de pass">Mot de passe</label>
+                        <input class="col-6 form-control" type="text" name="password">
+                        <input class="col-6 w-100 my-2" type="submit" value="Envoie">
+                        <?php
+                if (!empty($_COOKIE['firstname']) && !empty($_COOKIE['password'])) {
+                    echo $_COOKIE['firstname'] . ' / ' . $_COOKIE['password'];
+                }
+                ?>
+                    </div>
+                </div>
+            </form>
             </div>
         </div>
-    </main>>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
         crossorigin="anonymous"></script>

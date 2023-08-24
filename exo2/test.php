@@ -27,13 +27,8 @@ Il faudra afficher le contenu de ces variables sur la deuxième page.</p>
     <main class="">
     <div class="row">
             <div class="results position-absolute top-50 start-50 translate-middle ">
-            <a href="test.php?idTest"> test </a>
-                    <?php
-                    $_SESSION['lastname'] = ' Ossart ';                    
-                    $_SESSION['firstname'] = ' Nathalie ';                    
-                    $_SESSION['age'] = ' 47 ';
-                    ?>
-                    
+            <a href="index.php"> retour </a>
+            <p>Salut <?php echo $_SESSION['lastname'].$_SESSION['firstname']. $_SESSION['age'].' ans'; ?> !<br /></p>
             </div>
         </div>
     </main>

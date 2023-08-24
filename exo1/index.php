@@ -25,15 +25,14 @@
                 le nom du serveur</p>
         </div>
     </header>
-    <main class="">
+    <main>
         <div class="row">
-            <div class="results ">
-                <p>
-                    <?php
-                    echo "Votre navigateur a pour \"signature\":<br />" .
-                        htmlEntities($_SERVER["HTTP_USER_AGENT"]);
-                    ?>
-                </p>
+            <div class="">
+                <?php
+                echo 'Votre navigateur est :<br />' . ($_SERVER["HTTP_USER_AGENT"]). '<br>';
+                echo 'Votre adresse ip est : '. ($_SERVER['REMOTE_ADDR']). '<br>';
+                echo 'Le nom du serveur est : '. ($_SERVER['SERVER_NAME']). '<br>';
+                ?>
             </div>
         </div>
     </main>
